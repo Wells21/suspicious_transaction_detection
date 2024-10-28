@@ -7,9 +7,9 @@ from datetime import datetime
 
 @st.cache_resource(show_spinner="Fetching the model")
 def loading_model():
-    loaded_scaler = joblib.load('scaler.joblib')
-    loaded_model = joblib.load('model.joblib')
-    loaded_encoder = joblib.load('encoder.joblib')
+    loaded_scaler = joblib.load('STR model building/scaler.joblib')
+    loaded_model = joblib.load('STR model building/model.joblib')
+    loaded_encoder = joblib.load('STR model building/encoder.joblib')
     return loaded_scaler, loaded_model, loaded_encoder
 
 st.title("Suspicious Transaction Detection App")
